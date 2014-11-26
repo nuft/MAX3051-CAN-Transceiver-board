@@ -114,38 +114,6 @@ F 3 "" H 3800 3550 60  0000 C CNN
 $EndComp
 Text Notes 3600 4500 0    60   ~ 0
 R_RS = 0 for High-Speed mode\nR_RS (kohm) = 12000 / (maximum speed in kbps)\n(see Mode Selection section in MAX3051 datasheet)
-Wire Wire Line
-	3750 3750 3750 3650
-Wire Wire Line
-	3750 3650 3950 3650
-Wire Wire Line
-	3750 4250 3750 4300
-Wire Wire Line
-	4650 4100 4650 3950
-Wire Wire Line
-	5350 3250 5900 3250
-Wire Wire Line
-	5500 3350 5800 3350
-Wire Wire Line
-	5500 3350 5500 3350
-Wire Wire Line
-	5500 3350 5350 3350
-Wire Wire Line
-	3550 2450 3900 2450
-Wire Wire Line
-	3800 3550 3950 3550
-Wire Wire Line
-	3650 3350 3950 3350
-Wire Wire Line
-	3650 3450 3950 3450
-Wire Wire Line
-	3650 3250 3950 3250
-Wire Wire Line
-	5800 3350 5800 3350
-Wire Wire Line
-	5800 3350 5900 3350
-Wire Wire Line
-	5750 3050 5900 3050
 $Comp
 L GND #PWR05
 U 1 1 543EDE19
@@ -157,8 +125,6 @@ F 3 "" H 5750 3150 60  0000 C CNN
 	1    5750 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 3150 5750 3150
 $Comp
 L CAN CONN1
 U 1 1 5440302D
@@ -181,22 +147,10 @@ F 3 "" H 3150 2450 60  0000 C CNN
 	1    3150 2450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 2250 3850 2250
-Wire Wire Line
-	3550 2350 3850 2350
 Text Label 3850 2250 2    40   ~ 0
 5V
 Text Label 3850 2350 2    40   ~ 0
 3V3
-Wire Wire Line
-	5750 2750 5750 3050
-Wire Wire Line
-	5400 2750 5750 2750
-Wire Wire Line
-	5550 2850 5400 2850
-Wire Wire Line
-	5400 2650 5550 2650
 $Comp
 L CONN_3 K1
 U 1 1 54460970
@@ -212,10 +166,6 @@ Text Label 5550 2850 2    40   ~ 0
 3V3
 Text Label 5550 2650 2    40   ~ 0
 5V
-Wire Wire Line
-	3550 2550 3850 2550
-Wire Wire Line
-	3850 2650 3550 2650
 Text Label 3850 2550 2    40   ~ 0
 TXD
 Text Label 3850 2650 2    40   ~ 0
@@ -226,4 +176,67 @@ Text Label 3650 3250 0    40   ~ 0
 3V3
 Text Label 3650 3350 0    40   ~ 0
 TXD
+$Comp
+L R R2
+U 1 1 544A0FD2
+P 5650 3500
+F 0 "R2" V 5730 3500 40  0000 C CNN
+F 1 "opt" V 5657 3501 40  0000 C CNN
+F 2 "" V 5580 3500 30  0000 C CNN
+F 3 "" H 5650 3500 30  0000 C CNN
+	1    5650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3750 3750 3650
+Wire Wire Line
+	3750 3650 3950 3650
+Wire Wire Line
+	3750 4250 3750 4300
+Wire Wire Line
+	4650 4100 4650 3950
+Wire Wire Line
+	5350 3250 5900 3250
+Wire Wire Line
+	5350 3350 5500 3350
+Wire Wire Line
+	3550 2450 3900 2450
+Wire Wire Line
+	3800 3550 3950 3550
+Wire Wire Line
+	3650 3350 3950 3350
+Wire Wire Line
+	3650 3450 3950 3450
+Wire Wire Line
+	3650 3250 3950 3250
+Wire Wire Line
+	5800 3350 5900 3350
+Wire Wire Line
+	5750 3050 5900 3050
+Wire Wire Line
+	5900 3150 5750 3150
+Wire Wire Line
+	3550 2250 3850 2250
+Wire Wire Line
+	3550 2350 3850 2350
+Wire Wire Line
+	5750 2750 5750 3050
+Wire Wire Line
+	5400 2750 5750 2750
+Wire Wire Line
+	5550 2850 5400 2850
+Wire Wire Line
+	5400 2650 5550 2650
+Wire Wire Line
+	3550 2550 3850 2550
+Wire Wire Line
+	3850 2650 3550 2650
+Connection ~ 5650 3250
+Wire Wire Line
+	5800 3750 5800 3350
+Wire Wire Line
+	5500 3750 5800 3750
+Wire Wire Line
+	5500 3350 5500 3750
+Connection ~ 5650 3750
 $EndSCHEMATC
