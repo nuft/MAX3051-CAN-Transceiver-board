@@ -196,7 +196,7 @@
       (net 4 /TXD))
   )
 
-  (module _Solder_Pad1.27_3 (layer F.Cu) (tedit 54468DDD) (tstamp 54460DC6)
+  (module _Solder_Pad1.27_3 (layer F.Cu) (tedit 547629D8) (tstamp 54460DC6)
     (at 27.4 22.7 270)
     (path /54460970)
     (fp_text reference K1 (at -0.127 -1.651 270) (layer F.SilkS) hide
@@ -205,11 +205,11 @@
     (fp_text value JMP (at 0 -1.016 270) (layer F.SilkS) hide
       (effects (font (size 0.3 0.3) (thickness 0.075)))
     )
-    (pad 2 smd rect (at 0 0 270) (size 0.8 2) (layers F.Cu F.Paste F.Mask)
+    (pad 2 smd rect (at 0 0 270) (size 1 2) (layers F.Cu F.Paste F.Mask)
       (net 6 "Net-(CONN1-Pad1)"))
-    (pad 1 smd rect (at -1.27 0 270) (size 0.8 2) (layers F.Cu F.Paste F.Mask)
+    (pad 1 smd rect (at -1.27 0 270) (size 1 2) (layers F.Cu F.Paste F.Mask)
       (net 2 /5V))
-    (pad 3 smd rect (at 1.27 0 270) (size 0.8 2) (layers F.Cu F.Paste F.Mask)
+    (pad 3 smd rect (at 1.27 0 270) (size 1 2) (layers F.Cu F.Paste F.Mask)
       (net 1 /3V3))
   )
 
